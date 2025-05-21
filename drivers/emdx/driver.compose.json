@@ -1,0 +1,57 @@
+{
+  "name": {
+    "en": "EMDX Display"
+  },
+  "class": "mediaplayer",
+  "capabilities": [],
+  "platforms": [
+    "local"
+  ],
+  "connectivity": [
+    "lan"
+  ],
+  "images": {
+    "small": "{{driverAssetsPath}}/images/small.png",
+    "large": "{{driverAssetsPath}}/images/large.png",
+    "xlarge": "{{driverAssetsPath}}/images/xlarge.png"
+  },
+  "pair": [
+    {
+      "id": "addresses",
+      "options": {
+        "title": {
+          "en": "MAC & IP Address"
+        },
+        "logo": "logo.png"
+      }
+    },
+    {
+      "id": "pincode",
+      "template": "pincode",
+      "options": {
+        "title": {
+          "en": "Pincode"
+        },
+        "hint": {
+          "en": "Enter the pincode of your EMDX device."
+        },
+        "type": "number",
+        "length": 6
+      }
+    },
+    {
+      "id": "list_devices",
+      "template": "list_devices",
+      "options": {
+        "singular": true
+      },
+      "navigation": {
+        "next": "add_devices"
+      }
+    },
+    {
+      "id": "add_devices",
+      "template": "add_devices"
+    }
+  ]
+}

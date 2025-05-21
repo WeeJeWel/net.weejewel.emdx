@@ -1,0 +1,19 @@
+{
+  "name": "net.weejewel.emdx",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "lint": "eslint --ext .js,.ts --ignore-path .gitignore ."
+  },
+  "devDependencies": {
+    "@types/homey": "npm:homey-apps-sdk-v3-types@^0.3.12",
+    "eslint": "^7.32.0",
+    "eslint-config-athom": "^3.1.5"
+  },
+  "dependencies": {
+    "@weejewel/samsung-mdc": "^1.0.0",
+    "express": "^5.1.0",
+    "get-port": "^7.1.0",
+    "uuid": "^11.1.0"
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
+  "id": "net.weejewel.emdx",
+  "version": "1.0.0",
+  "compatibility": ">=12.1.0",
+  "sdk": 3,
+  "platforms": [
+    "local"
+  ],
+  "name": {
+    "en": "Samsung E-Paper"
+  },
+  "description": {
+    "en": "Control your Samsung Color E-Paper EMDX"
+  },
+  "brandColor": "#579A9D",
+  "category": [
+    "appliances"
+  ],
+  "permissions": [],
+  "images": {
+    "small": "/assets/images/small.png",
+    "large": "/assets/images/large.png",
+    "xlarge": "/assets/images/xlarge.png"
+  },
+  "author": {
+    "name": "Emile Nijssen",
+    "email": "emile@emile.nl"
+  },
+  "support": "mailto:emile@emile.nl",
+  "flow": {
+    "actions": [
+      {
+        "id": "show-image",
+        "title": {
+          "en": "Show an image"
+        },
+        "titleFormatted": {
+          "en": "Show [[droptoken]]"
+        },
+        "hint": {
+          "en": "Show an image on the device."
+        },
+        "droptoken": "image",
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=emdx"
+          }
+        ]
+      }
+    ]
+  },
+  "drivers": [
+    {
+      "name": {
+        "en": "EMDX Display"
+      },
+      "class": "mediaplayer",
+      "capabilities": [],
+      "platforms": [
+        "local"
+      ],
+      "connectivity": [
+        "lan"
+      ],
+      "images": {
+        "small": "/drivers/emdx/assets/images/small.png",
+        "large": "/drivers/emdx/assets/images/large.png",
+        "xlarge": "/drivers/emdx/assets/images/xlarge.png"
+      },
+      "pair": [
+        {
+          "id": "addresses",
+          "options": {
+            "title": {
+              "en": "MAC & IP Address"
+            },
+            "logo": "logo.png"
+          }
+        },
+        {
+          "id": "pincode",
+          "template": "pincode",
+          "options": {
+            "title": {
+              "en": "Pincode"
+            },
+            "hint": {
+              "en": "Enter the pincode of your EMDX device."
+            },
+            "type": "number",
+            "length": 6
+          }
+        },
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "options": {
+            "singular": true
+          },
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        }
+      ],
+      "id": "emdx"
+    }
+  ]
+}

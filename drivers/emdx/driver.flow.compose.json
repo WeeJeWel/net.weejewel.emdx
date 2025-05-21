@@ -1,0 +1,17 @@
+{
+  "actions": [
+    {
+      "id": "show-image",
+      "title": {
+        "en": "Show an image"
+      },
+      "titleFormatted": {
+        "en": "Show [[droptoken]]"
+      },
+      "hint": {
+        "en": "Show an image on the device."
+      },
+      "droptoken": "image"
+    }
+  ]
+}
