@@ -26,5 +26,6 @@
     "name": "Emile Nijssen",
     "email": "emile@emile.nl"
   },
-  "support": "mailto:emile@emile.nl"
+  "support": "mailto:emile@emile.nl",
+  "source": "https://github.com/WeeJeWel/net.weejewel.emdx"
 }
